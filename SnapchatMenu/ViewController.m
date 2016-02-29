@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "LeftView.h"
+#import "CameraView.h"
+#import "RightView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -16,7 +21,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [UIApplication sharedApplication].statusBarHidden = YES; // 貌似无效
+    LeftView *leftView = [[LeftView alloc] initWithNibName:@"LeftView" bundle:nil];
+    CameraView *cameraView = [[CameraView alloc] initWithNibName:@"CameraView" bundle:nil];
+    RightView *rightView = [[RightView alloc] initWithNibName:@"RightView" bundle:nil];
+    
+    [self addChildViewController:leftView];
+    [self.scrollView addSubview:leftView.view];
+    [leftView didMoveToParentViewController:self];
+    
+    [self addChildViewController:cameraView];
+    [self.scrollView addSubview:cameraView.view];
+    [cameraView didMoveToParentViewController:self];
+    
+    [self addChildViewController:rightView];
+    [self.scrollView addSubview:cameraView.view];
+    [cameraView didMoveToParentViewController:self];
+    
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width * 3, self.view.frame.size.height);
 }
 
 - (void)didReceiveMemoryWarning {

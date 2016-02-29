@@ -13,6 +13,12 @@
 		FD0971941C84B12A00FDB89A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0971921C84B12A00FDB89A /* Main.storyboard */; };
 		FD0971961C84B12A00FDB89A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD0971951C84B12A00FDB89A /* Assets.xcassets */; };
 		FD0971991C84B12A00FDB89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD0971971C84B12A00FDB89A /* LaunchScreen.storyboard */; };
+		FD0971A81C84B24600FDB89A /* CameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971A61C84B24600FDB89A /* CameraView.m */; };
+		FD0971A91C84B24600FDB89A /* CameraView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD0971A71C84B24600FDB89A /* CameraView.xib */; };
+		FD0971AD1C84B26100FDB89A /* RightView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971AB1C84B26100FDB89A /* RightView.m */; };
+		FD0971AE1C84B26100FDB89A /* RightView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD0971AC1C84B26100FDB89A /* RightView.xib */; };
+		FD0971B51C84B3D800FDB89A /* LeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0971B31C84B3D800FDB89A /* LeftView.m */; };
+		FD0971B61C84B3D800FDB89A /* LeftView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD0971B41C84B3D800FDB89A /* LeftView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,15 @@
 		FD0971951C84B12A00FDB89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD0971981C84B12A00FDB89A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD09719A1C84B12A00FDB89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD0971A51C84B24600FDB89A /* CameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraView.h; sourceTree = "<group>"; };
+		FD0971A61C84B24600FDB89A /* CameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraView.m; sourceTree = "<group>"; };
+		FD0971A71C84B24600FDB89A /* CameraView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraView.xib; sourceTree = "<group>"; };
+		FD0971AA1C84B26100FDB89A /* RightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightView.h; sourceTree = "<group>"; };
+		FD0971AB1C84B26100FDB89A /* RightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightView.m; sourceTree = "<group>"; };
+		FD0971AC1C84B26100FDB89A /* RightView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightView.xib; sourceTree = "<group>"; };
+		FD0971B21C84B3D800FDB89A /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftView.h; sourceTree = "<group>"; };
+		FD0971B31C84B3D800FDB89A /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftView.m; sourceTree = "<group>"; };
+		FD0971B41C84B3D800FDB89A /* LeftView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +78,9 @@
 				FD09718F1C84B12A00FDB89A /* ViewController.h */,
 				FD0971901C84B12A00FDB89A /* ViewController.m */,
 				FD0971921C84B12A00FDB89A /* Main.storyboard */,
+				FD0971AF1C84B27600FDB89A /* LeftView */,
+				FD0971B01C84B28100FDB89A /* CameraView */,
+				FD0971B11C84B29600FDB89A /* RightView */,
 				FD0971951C84B12A00FDB89A /* Assets.xcassets */,
 				FD0971971C84B12A00FDB89A /* LaunchScreen.storyboard */,
 				FD09719A1C84B12A00FDB89A /* Info.plist */,
@@ -77,6 +95,36 @@
 				FD09718A1C84B12A00FDB89A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD0971AF1C84B27600FDB89A /* LeftView */ = {
+			isa = PBXGroup;
+			children = (
+				FD0971B21C84B3D800FDB89A /* LeftView.h */,
+				FD0971B31C84B3D800FDB89A /* LeftView.m */,
+				FD0971B41C84B3D800FDB89A /* LeftView.xib */,
+			);
+			name = LeftView;
+			sourceTree = "<group>";
+		};
+		FD0971B01C84B28100FDB89A /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				FD0971A51C84B24600FDB89A /* CameraView.h */,
+				FD0971A61C84B24600FDB89A /* CameraView.m */,
+				FD0971A71C84B24600FDB89A /* CameraView.xib */,
+			);
+			name = CameraView;
+			sourceTree = "<group>";
+		};
+		FD0971B11C84B29600FDB89A /* RightView */ = {
+			isa = PBXGroup;
+			children = (
+				FD0971AA1C84B26100FDB89A /* RightView.h */,
+				FD0971AB1C84B26100FDB89A /* RightView.m */,
+				FD0971AC1C84B26100FDB89A /* RightView.xib */,
+			);
+			name = RightView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0971991C84B12A00FDB89A /* LaunchScreen.storyboard in Resources */,
+				FD0971A91C84B24600FDB89A /* CameraView.xib in Resources */,
+				FD0971AE1C84B26100FDB89A /* RightView.xib in Resources */,
 				FD0971961C84B12A00FDB89A /* Assets.xcassets in Resources */,
 				FD0971941C84B12A00FDB89A /* Main.storyboard in Resources */,
+				FD0971B61C84B3D800FDB89A /* LeftView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +201,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD0971911C84B12A00FDB89A /* ViewController.m in Sources */,
+				FD0971A81C84B24600FDB89A /* CameraView.m in Sources */,
+				FD0971AD1C84B26100FDB89A /* RightView.m in Sources */,
 				FD09718E1C84B12A00FDB89A /* AppDelegate.m in Sources */,
 				FD09718B1C84B12A00FDB89A /* main.m in Sources */,
+				FD0971B51C84B3D800FDB89A /* LeftView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
