@@ -8,7 +8,7 @@
 
 #import "CameraView.h"
 
-@interface CameraView ()
+@interface CameraView () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @end
 
